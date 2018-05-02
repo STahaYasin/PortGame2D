@@ -16,8 +16,8 @@ TextureImporter:
     21300018: General_9
     21300020: DirtTrack_1
     21300022: DirtTrack_2
-    21300024: General_12
-    21300026: General_13
+    21300024: Water_1
+    21300026: Water_2
     21300028: General_14
     21300030: General_15
     21300032: General_16
@@ -45,8 +45,8 @@ TextureImporter:
     21300076: General_38
     21300078: DirtTrack_3
     21300080: DirtTrack_4
-    21300082: General_41
-    21300084: General_42
+    21300082: Water_3
+    21300084: Water_24
     21300086: General_43
     21300088: General_44
     21300090: General_45
@@ -87,9 +87,9 @@ TextureImporter:
     21300160: DirtTrack_5
     21300162: DirtTrack_6
     21300164: DirtTrack_7
-    21300166: General_83
-    21300168: General_84
-    21300170: General_85
+    21300166: Water_5
+    21300168: Water_6
+    21300170: Water_7
     21300172: General_86
     21300174: General_87
     21300176: General_88
@@ -137,9 +137,9 @@ TextureImporter:
     21300260: DirtTrack_8
     21300262: DirtTrack_9
     21300264: DirtTrack_10
-    21300266: General_133
-    21300268: General_134
-    21300270: General_135
+    21300266: Water_8
+    21300268: Water_9
+    21300270: Water_10
     21300272: General_136
     21300274: General_137
     21300276: General_138
@@ -187,9 +187,9 @@ TextureImporter:
     21300360: DirtTrack_11
     21300362: DirtTrack_12
     21300364: DirtTrack_13
-    21300366: General_183
-    21300368: General_184
-    21300370: General_185
+    21300366: Water_11
+    21300368: Water_12
+    21300370: Water_13
     21300372: General_186
     21300374: General_187
     21300376: General_188
@@ -1990,7 +1990,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_12
+      name: Water_1
       rect:
         serializedVersion: 2
         x: 432
@@ -2004,7 +2004,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_13
+      name: Water_2
       rect:
         serializedVersion: 2
         x: 448
@@ -2396,7 +2396,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_41
+      name: Water_3
       rect:
         serializedVersion: 2
         x: 432
@@ -2410,7 +2410,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_42
+      name: Water_24
       rect:
         serializedVersion: 2
         x: 448
@@ -2984,7 +2984,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_83
+      name: Water_5
       rect:
         serializedVersion: 2
         x: 416
@@ -2998,7 +2998,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_84
+      name: Water_6
       rect:
         serializedVersion: 2
         x: 432
@@ -3012,7 +3012,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_85
+      name: Water_7
       rect:
         serializedVersion: 2
         x: 448
@@ -3684,7 +3684,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_133
+      name: Water_8
       rect:
         serializedVersion: 2
         x: 416
@@ -3698,7 +3698,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_134
+      name: Water_9
       rect:
         serializedVersion: 2
         x: 432
@@ -3712,7 +3712,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_135
+      name: Water_10
       rect:
         serializedVersion: 2
         x: 448
@@ -4384,7 +4384,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_183
+      name: Water_11
       rect:
         serializedVersion: 2
         x: 416
@@ -4398,7 +4398,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_184
+      name: Water_12
       rect:
         serializedVersion: 2
         x: 432
@@ -4412,7 +4412,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_185
+      name: Water_13
       rect:
         serializedVersion: 2
         x: 448
