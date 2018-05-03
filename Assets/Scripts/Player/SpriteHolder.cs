@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class SpriteHolder : MonoBehaviour
 {
-    private int currentSpriteState = 0;
+    private int currentSpriteState = 5; // 5 Means not moving
+    private int currentAnimState = 0;
+    private float lastUpdateTime = 0;
+    private float updateCooler = 0.6f;
+    
 
     public Sprite[] Sprites_NotMoving;
     public Sprite[] Sprites_left;
@@ -19,29 +24,51 @@ public class SpriteHolder : MonoBehaviour
 
     void Update()
     {
+        float currentTime = Time.time;
 
+        if(currentTime > lastUpdateTime + updateCooler)
+        {
+            if (currentAnimState < getSpriteArray().Length - 1)
+                currentAnimState++;
+            else
+                currentAnimState = 0;
+        }
     }
-    public void SetDirection(int code)
+    public void SetDirection(int direction) // Numbers are the same as the numpad control
     {
-        currentSpriteState = code;
-    }
-    public void GetCurrentSprite()
-    {
+        if (direction == currentSpriteState) return;
 
+        currentSpriteState = direction;
+        currentAnimState = 0;
     }
     private Sprite[] getSpriteArray()
     {
         switch (currentSpriteState)
         {
-            case 0: return Sprites_NotMoving;
-            case 1: return Sprites_left;
-            case 2: return Sprites_right;
-            case 3: return Sprites_top;
-            case 4: return Sprites_down;
+            case 5: return Sprites_NotMoving;
+            case 4: return Sprites_left;
+            case 6: return Sprites_right;
+            case 8: return Sprites_top;
+            case 2: return Sprites_down;
 
             default: return null;
         }
+    }
+    public string GetDirectionName()
+    {
+        switch (currentSpriteState)
+        {
+            case 5: return "Not moving";
+            case 4: return "Left";
+            case 6: return "Right";
+            case 8: return "Top";
+            case 2: return "Down";
 
-        return Sprites_left;
+            default: return null;
+        }
+    }
+    public Sprite GetSprite()
+    {
+        return getSpriteArray()[currentAnimState];
     }
 }
