@@ -18404,13 +18404,13 @@ MonoBehaviour:
   Sprites_NotMoving:
   - {fileID: 21300000, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   Sprites_left:
-  - {fileID: 21300036, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
+  - {fileID: 21300024, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   - {fileID: 21300026, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   - {fileID: 21300028, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   Sprites_right:
-  - {fileID: 21300024, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
+  - {fileID: 21300036, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
+  - {fileID: 21300038, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   - {fileID: 21300040, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
-  - {fileID: 21300042, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   Sprites_top:
   - {fileID: 21300012, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}
   - {fileID: 21300014, guid: c39ece2fb20e3a144a728f6c2942be73, type: 3}

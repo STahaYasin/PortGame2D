@@ -8,7 +8,7 @@ public class SpriteHolder : MonoBehaviour
     private int currentSpriteState = 5; // 5 Means not moving
     private int currentAnimState = 0;
     private float lastUpdateTime = 0;
-    private float updateCooler = 0.6f;
+    private float updateCooler = 0.2f;
     
 
     public Sprite[] Sprites_NotMoving;
@@ -32,6 +32,8 @@ public class SpriteHolder : MonoBehaviour
                 currentAnimState++;
             else
                 currentAnimState = 0;
+
+            lastUpdateTime = currentTime;
         }
     }
     public void SetDirection(int direction) // Numbers are the same as the numpad control

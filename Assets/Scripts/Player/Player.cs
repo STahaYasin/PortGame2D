@@ -37,8 +37,8 @@ public class Player : Character {
         else
             inputX = 0;
 
-        if(xSpeed != 0 && ySpeed != 0)
-        {
+        //if(xSpeed != 0 && ySpeed != 0)
+        //{
             if (inputX > 0) // Numbers are the same as the numpad control
                 spriteHolder.SetDirection(6);
             else if (inputX < 0)
@@ -49,7 +49,7 @@ public class Player : Character {
                 spriteHolder.SetDirection(2);
             else
                 spriteHolder.SetDirection(5);
-        }
+        //}
 
         setSprite();
 
