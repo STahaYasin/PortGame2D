@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float walkSpeed = 3f;
 
-	void Update () { 
+	void Update () {
 
         if(!isMoving)
         {
