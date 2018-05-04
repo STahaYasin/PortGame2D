@@ -5,6 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Player : Character {
 
+    public CharacterController controller;
+
+    public int MoveSpeed = 5;
+
     public SpriteHolder spriteHolder;
     public SpriteRenderer spriteRenderer;
 
@@ -57,11 +61,19 @@ public class Player : Character {
 
         //StartCoroutine(Move(inputX, inputY));
 
-        Vector2 pos = transform.position;
+        /*Vector2 pos = transform.position;
         pos.x += xSpeed * Time.deltaTime * 5;
         pos.y += ySpeed * Time.deltaTime * 5;
 
-        transform.position = pos;
+        transform.position = pos;*/
+
+        Vector3 moveDirection = Vector3.zero;
+
+        moveDirection = new Vector3(xSpeed * MoveSpeed, ySpeed * MoveSpeed, 0);
+        moveDirection = transform.TransformDirection(moveDirection);
+
+        controller.Move(moveDirection * Time.deltaTime);
+
     }
     private void setSprite()
     {

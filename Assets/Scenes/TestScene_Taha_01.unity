@@ -986,6 +986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161232159}
   - component: {fileID: 161232158}
+  - component: {fileID: 161232160}
   m_Layer: 0
   m_Name: LongGrass (1)
   m_TagString: Untagged
@@ -1050,6 +1051,18 @@ Transform:
   m_Father: {fileID: 1420398339}
   m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &161232160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 161232157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &162921324
 Prefab:
   m_ObjectHideFlags: 0
@@ -5084,6 +5097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611219591}
   - component: {fileID: 611219590}
+  - component: {fileID: 611219592}
   m_Layer: 0
   m_Name: LongGrass (2)
   m_TagString: Untagged
@@ -5148,6 +5162,18 @@ Transform:
   m_Father: {fileID: 1420398339}
   m_RootOrder: 144
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &611219592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 611219589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &628802678
 GameObject:
   m_ObjectHideFlags: 0
@@ -12936,6 +12962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578493550}
   - component: {fileID: 1578493549}
+  - component: {fileID: 1578493551}
   m_Layer: 0
   m_Name: LongGrass
   m_TagString: Untagged
@@ -13000,6 +13027,18 @@ Transform:
   m_Father: {fileID: 1420398339}
   m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1578493551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578493548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1595378621
 GameObject:
   m_ObjectHideFlags: 0
@@ -18325,6 +18364,7 @@ GameObject:
   - component: {fileID: 2088093586}
   - component: {fileID: 2088093587}
   - component: {fileID: 2088093585}
+  - component: {fileID: 2088093588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -18430,8 +18470,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166358af2fcf15745995a820ab031d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 2088093588}
+  MoveSpeed: 5
   spriteHolder: {fileID: 2088093586}
   spriteRenderer: {fileID: 2088093585}
+--- !u!143 &2088093588
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088093583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.359375
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2091847168
 GameObject:
   m_ObjectHideFlags: 0
