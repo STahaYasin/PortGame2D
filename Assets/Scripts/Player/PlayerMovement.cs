@@ -17,6 +17,10 @@ public class PlayerMovement : MonoBehaviour {
 
     public float walkSpeed = 3f;
 
+  void OnTriggerEnter(Collider other){
+    Destroy(other.gameObject);
+  }
+
 	void Update () {
 
         if(!isMoving)
