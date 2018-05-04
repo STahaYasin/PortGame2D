@@ -55,10 +55,8 @@
      <Compile Include="Assets\Scripts\Map\Regions.cs" />
      <Compile Include="Assets\Scripts\Player\Character.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\SpriteHolder.cs" />
-     <Compile Include="Assets\Scripts\Pokemon\BasePokemon.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
