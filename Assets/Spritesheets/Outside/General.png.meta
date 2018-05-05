@@ -26,8 +26,8 @@ TextureImporter:
     21300038: General_19
     21300040: General_20
     21300042: General_21
-    21300044: General_22
-    21300046: General_23
+    21300044: path_brick_17
+    21300046: path_brick_19
     21300048: General_24
     21300050: General_25
     21300052: General_26
@@ -55,8 +55,8 @@ TextureImporter:
     21300096: General_48
     21300098: General_49
     21300100: General_50
-    21300102: General_51
-    21300104: General_52
+    21300102: path_brick_11
+    21300104: path_brick_13
     21300106: General_53
     21300108: General_54
     21300110: General_55
@@ -102,9 +102,9 @@ TextureImporter:
     21300190: General_95
     21300192: General_96
     21300194: General_97
-    21300196: General_98
-    21300198: General_99
-    21300200: General_100
+    21300196: path_brick_7
+    21300198: path_brick_8
+    21300200: path_brick_9
     21300202: General_101
     21300204: General_102
     21300206: General_103
@@ -152,9 +152,9 @@ TextureImporter:
     21300290: General_145
     21300292: General_146
     21300294: General_147
-    21300296: General_148
-    21300298: General_149
-    21300300: General_150
+    21300296: path_brick_4
+    21300298: path_brick_5
+    21300300: path_brick_6
     21300302: General_151
     21300304: General_152
     21300306: General_153
@@ -202,9 +202,9 @@ TextureImporter:
     21300390: General_195
     21300392: General_196
     21300394: General_197
-    21300396: General_198
-    21300398: General_199
-    21300400: General_200
+    21300396: path_brick_1
+    21300398: path_brick_2
+    21300400: path_brick_3
     21300402: General_201
     21300404: General_202
     21300406: General_203
@@ -1580,7 +1580,7 @@ TextureImporter:
     21303146: General_1577
     21303148: General_1578
     21303150: General_1579
-    21303152: General_1580
+    21303152: Boat_1
     21303154: General_1581
     21303156: General_1582
     21303158: General_1583
@@ -1650,7 +1650,7 @@ TextureImporter:
     21303286: General_1647
     21303288: General_1648
     21303290: General_1649
-    21303292: General_1650
+    21303292: Boat_2
     21303294: General_1651
     21303296: General_1652
     21303298: General_1653
@@ -2130,7 +2130,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_22
+      name: path_brick_17
       rect:
         serializedVersion: 2
         x: 672
@@ -2144,7 +2144,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_23
+      name: path_brick_19
       rect:
         serializedVersion: 2
         x: 688
@@ -2536,7 +2536,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_51
+      name: path_brick_11
       rect:
         serializedVersion: 2
         x: 672
@@ -2550,7 +2550,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_52
+      name: path_brick_13
       rect:
         serializedVersion: 2
         x: 688
@@ -3194,7 +3194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_98
+      name: path_brick_7
       rect:
         serializedVersion: 2
         x: 656
@@ -3208,7 +3208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_99
+      name: path_brick_8
       rect:
         serializedVersion: 2
         x: 672
@@ -3222,7 +3222,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_100
+      name: path_brick_9
       rect:
         serializedVersion: 2
         x: 688
@@ -3894,7 +3894,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_148
+      name: path_brick_4
       rect:
         serializedVersion: 2
         x: 656
@@ -3908,7 +3908,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_149
+      name: path_brick_5
       rect:
         serializedVersion: 2
         x: 672
@@ -3922,7 +3922,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_150
+      name: path_brick_6
       rect:
         serializedVersion: 2
         x: 688
@@ -4594,7 +4594,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_198
+      name: path_brick_1
       rect:
         serializedVersion: 2
         x: 656
@@ -4608,7 +4608,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_199
+      name: path_brick_2
       rect:
         serializedVersion: 2
         x: 672
@@ -4622,7 +4622,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_200
+      name: path_brick_3
       rect:
         serializedVersion: 2
         x: 688
@@ -23942,13 +23942,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_1580
+      name: Boat_1
       rect:
         serializedVersion: 2
-        x: 224
-        y: 48
-        width: 16
-        height: 16
+        x: 156
+        y: 5
+        width: 128
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -24922,7 +24922,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: General_1650
+      name: Boat_2
       rect:
         serializedVersion: 2
         x: 256

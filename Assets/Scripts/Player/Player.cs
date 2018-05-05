@@ -7,10 +7,16 @@ public class Player : Character {
 
     public CharacterController controller;
 
-    public int MoveSpeed = 5;
+    public float MoveSpeed = 1f;
 
     public SpriteHolder spriteHolder;
     public SpriteRenderer spriteRenderer;
+
+    private Vector2 userInput = -Vector2.one;
+
+    //Floats to hold the input move speed
+    private float xSpeed = 0;
+    private float ySpeed = 0;
 
     public Player()
     {
@@ -18,7 +24,7 @@ public class Player : Character {
     }
     
 	void Start () {
-		
+        Debug.Log("PLayer started");
 	}
 	
 	void Update () {
@@ -30,11 +36,45 @@ public class Player : Character {
 	}
     void move()
     {
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
+        //float inputX = Input.GetAxis("Horizontal");
+        //float inputY = Input.GetAxis("Vertical");
 
-        float xSpeed = inputX;
-        float ySpeed = inputY;
+        if(Input.touchCount > 0)
+        {
+            Touch userTouch = Input.touches[0];
+
+            if(userTouch.phase == TouchPhase.Began)
+            {
+                userInput = userTouch.position;
+            }
+            else if(userTouch.phase == TouchPhase.Moved)
+            {
+                Vector2 currentUserInput = userTouch.position;
+                Debug.Log(currentUserInput.x);
+
+                Vector2 posss = transform.position;
+
+                xSpeed = (userTouch.position.x - userInput.x) / 275;
+                ySpeed = (userTouch.position.y - userInput.y) / 250;
+                transform.position = posss;
+            }
+            else if(userTouch.phase == TouchPhase.Ended)
+            {
+                xSpeed = 0;
+                ySpeed = 0;
+            }
+        }
+
+        if(xSpeed >= 1) xSpeed = 1;
+        else if(xSpeed <= -1) xSpeed = -1;
+        if (ySpeed >= 1) ySpeed = 1;
+        else if (ySpeed <= -1) ySpeed = -1;
+
+        float inputX = xSpeed;
+        float inputY = ySpeed;
+
+        //float xSpeed = inputX;
+        //float ySpeed = inputY;
 
         if (Mathf.Abs(inputX) > Mathf.Abs(inputY))
             inputY = 0;
@@ -80,22 +120,9 @@ public class Player : Character {
         if (spriteRenderer == null) return;
         spriteRenderer.sprite = spriteHolder.GetSprite();
     }
-    /*public IEnumerator Move(float x, float y)
+    public void OnCollisionEnter(Collision collision)
     {
-        bool isMoving = true;
-        Vector3 startPos = transform.position;
-        float t = 0;
-
-        Vector3 endPos = new Vector3(startPos.x + System.Math.Sign(x), startPos.y + System.Math.Sign(y), startPos.z);
-
-        while (t < 1f)
-        {
-            t += Time.deltaTime * 3;
-            transform.position = Vector3.Lerp(startPos, endPos, t);
-            yield return null;
-        }
-
-        isMoving = false;
-        yield return 0;
-    }*/
+        //Output the Collider's GameObject's name
+        Debug.Log("fbgfb");
+    }
 }
