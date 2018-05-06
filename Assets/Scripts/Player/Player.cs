@@ -55,7 +55,7 @@ public class Player : Character {
                 Vector2 posss = transform.position;
 
                 xSpeed = (userTouch.position.x - userInput.x) / 275;
-                ySpeed = (userTouch.position.y - userInput.y) / 250;
+                ySpeed = (userTouch.position.y - userInput.y) / 275;
                 transform.position = posss;
             }
             else if(userTouch.phase == TouchPhase.Ended)
@@ -77,9 +77,17 @@ public class Player : Character {
         //float ySpeed = inputY;
 
         if (Mathf.Abs(inputX) > Mathf.Abs(inputY))
+        {
             inputY = 0;
+            //ySpeed /= 1.5f;
+            ySpeed = 0;
+        }
         else
+        {
             inputX = 0;
+            //xSpeed /= 1.5f;
+            xSpeed = 0;
+        }
 
         //if(xSpeed != 0 && ySpeed != 0)
         //{
