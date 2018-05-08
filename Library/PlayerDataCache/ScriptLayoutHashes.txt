@@ -2,6 +2,7 @@ Android
 PlayerPath?
 X:/Artesis Plantijn/3EA Semester 2/PortGame2D/PortGame2D/TestGame.apk
 SceneListBegin?
+Assets/Scenes/0_StartMenu.unity
 Assets/Scenes/TestScene_Taha_01.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
