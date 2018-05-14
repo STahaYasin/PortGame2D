@@ -65,7 +65,10 @@ public class Player : Character {
             }
         }
 
-        if(xSpeed >= 1) xSpeed = 1;
+        xSpeed += Input.GetAxis("Horizontal") / 3;
+        ySpeed += Input.GetAxis("Vertical") / 3;
+
+        if (xSpeed >= 1) xSpeed = 1;
         else if(xSpeed <= -1) xSpeed = -1;
         if (ySpeed >= 1) ySpeed = 1;
         else if (ySpeed <= -1) ySpeed = -1;

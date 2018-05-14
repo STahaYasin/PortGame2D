@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Map\LongGrass.cs" />
      <Compile Include="Assets\Scripts\Map\Regions.cs" />
      <Compile Include="Assets\Scripts\Player\Character.cs" />
+     <Compile Include="Assets\Scripts\Player\LevelAction.cs" />
      <Compile Include="Assets\Scripts\Player\MoveThePlayer.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
