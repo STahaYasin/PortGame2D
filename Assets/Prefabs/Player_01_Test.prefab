@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1599023403179142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.4387116, y: -0.16762114, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4823048179859800}
@@ -95,7 +95,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.39
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -133,6 +133,8 @@ MonoBehaviour:
   MoveSpeed: 5
   spriteHolder: {fileID: 114476982996791378}
   spriteRenderer: {fileID: 212148874113709652}
+  JoysticBackground: {fileID: 2800000, guid: 6c977a1677393c940a39aea0f3f00ed6, type: 3}
+  JoystickFront: {fileID: 2800000, guid: cc94edd80e904eb439be477a7d56defc, type: 3}
 --- !u!114 &114476982996791378
 MonoBehaviour:
   m_ObjectHideFlags: 1

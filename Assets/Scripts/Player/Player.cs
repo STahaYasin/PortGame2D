@@ -15,6 +15,11 @@ public class Player : Character {
     private Vector2 userInput = -Vector2.one;
     private bool userInputStarted = false;
     private int joystickIsAtIndex = -1;
+    public Texture2D JoysticBackground;
+    public Texture2D JoystickFront;
+    private Sprite joystic;
+    private float joyStickX = 0;
+    private float joyStickY = 0;
 
     //Floats to hold the input move speed
     private float xSpeed = 0;
@@ -27,7 +32,27 @@ public class Player : Character {
     
 	void Start () {
         Debug.Log("PLayer started");
+
 	}
+    void OnGUI()
+    {
+        if (userInputStarted)
+        {
+            int joystickSize = Screen.width / 7;
+
+            int posX = (int)userInput.x - (joystickSize / 2);
+            int posY = Screen.height - (int)userInput.y - (joystickSize / 2);
+
+            Rect position = new Rect(posX, posY, joystickSize, joystickSize);
+            GUI.DrawTexture(position, JoysticBackground);
+
+            int posXMove = (int)(joyStickX * 90);
+            int posYMove = (int)(joyStickY * 90);
+
+            Rect position2 = new Rect(posX + (joystickSize / 4) + posXMove, posY + (joystickSize / 4) - posYMove, joystickSize / 2, joystickSize / 2);
+            GUI.DrawTexture(position2, JoystickFront);
+        }
+    }
 	
 	void Update () {
 
@@ -43,7 +68,10 @@ public class Player : Character {
 
         bool joystickIsAlreadyTouched = false;
 
-        for(int i = 0; i < Input.touchCount; i++)
+        xSpeed += Input.GetAxis("Horizontal") / 3;
+        ySpeed += Input.GetAxis("Vertical") / 3;
+
+        for (int i = 0; i < Input.touchCount; i++)
         {
             Touch touch = Input.touches[i];
             if(touch.position.x < (Screen.width / 2))
@@ -57,6 +85,8 @@ public class Player : Character {
                         userInput = touch.position;
                         userInputStarted = true;
                         joystickIsAtIndex = i;
+
+                        //joystic = Sprite.Create(JoysticBackground, new Rect(0.0f, 0.0f, JoysticBackground.width, JoysticBackground.height), new Vector2(0.5f, 0.5f), 100.0f);
                     }
                 }
             }
@@ -74,9 +104,17 @@ public class Player : Character {
 
                     Vector2 posss = transform.position;
 
-                    xSpeed = (touch.position.x - userInput.x) / 275;
-                    ySpeed = (touch.position.y - userInput.y) / 275;
+                    xSpeed = (touch.position.x - userInput.x) / 175;
+                    ySpeed = (touch.position.y - userInput.y) / 175;
                     transform.position = posss;
+
+                    if (xSpeed >= 1) xSpeed = 1;
+                    else if (xSpeed <= -1) xSpeed = -1;
+                    if (ySpeed >= 1) ySpeed = 1;
+                    else if (ySpeed <= -1) ySpeed = -1;
+
+                    joyStickX = xSpeed;
+                    joyStickY = ySpeed;
                 }
                 else if (touch.phase == TouchPhase.Ended)
                 {
@@ -87,14 +125,6 @@ public class Player : Character {
                 }
             }
         }
-
-        xSpeed += Input.GetAxis("Horizontal") / 3;
-        ySpeed += Input.GetAxis("Vertical") / 3;
-
-        if (xSpeed >= 1) xSpeed = 1;
-        else if(xSpeed <= -1) xSpeed = -1;
-        if (ySpeed >= 1) ySpeed = 1;
-        else if (ySpeed <= -1) ySpeed = -1;
 
         float inputX = xSpeed;
         float inputY = ySpeed;
