@@ -38,7 +38,7 @@ public class Player : Character {
     {
         if (userInputStarted)
         {
-            int joystickSize = Screen.width / 7;
+            int joystickSize = Screen.width / 6;
 
             int posX = (int)userInput.x - (joystickSize / 2);
             int posY = Screen.height - (int)userInput.y - (joystickSize / 2);
