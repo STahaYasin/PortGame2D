@@ -13,6 +13,8 @@ public class Player : Character {
     public SpriteRenderer spriteRenderer;
 
     private Vector2 userInput = -Vector2.one;
+    private bool userInputStarted = false;
+    private int joystickIsAtIndex = -1;
 
     //Floats to hold the input move speed
     private float xSpeed = 0;
@@ -39,29 +41,50 @@ public class Player : Character {
         //float inputX = Input.GetAxis("Horizontal");
         //float inputY = Input.GetAxis("Vertical");
 
-        if(Input.touchCount > 0)
+        bool joystickIsAlreadyTouched = false;
+
+        for(int i = 0; i < Input.touchCount; i++)
         {
-            Touch userTouch = Input.touches[0];
-
-            if(userTouch.phase == TouchPhase.Began)
+            Touch touch = Input.touches[i];
+            if(touch.position.x < (Screen.width / 2))
             {
-                userInput = userTouch.position;
+                if (!joystickIsAlreadyTouched)
+                {
+                    joystickIsAlreadyTouched = true;
+
+                    if (touch.phase == TouchPhase.Began)
+                    {
+                        userInput = touch.position;
+                        userInputStarted = true;
+                        joystickIsAtIndex = i;
+                    }
+                }
             }
-            else if(userTouch.phase == TouchPhase.Moved)
+            else
             {
-                Vector2 currentUserInput = userTouch.position;
-                Debug.Log(currentUserInput.x);
 
-                Vector2 posss = transform.position;
-
-                xSpeed = (userTouch.position.x - userInput.x) / 275;
-                ySpeed = (userTouch.position.y - userInput.y) / 275;
-                transform.position = posss;
             }
-            else if(userTouch.phase == TouchPhase.Ended)
+
+            if (userInputStarted && i == joystickIsAtIndex)
             {
-                xSpeed = 0;
-                ySpeed = 0;
+                if (touch.phase == TouchPhase.Moved)
+                {
+                    Vector2 currentUserInput = touch.position;
+                    Debug.Log(currentUserInput.x);
+
+                    Vector2 posss = transform.position;
+
+                    xSpeed = (touch.position.x - userInput.x) / 275;
+                    ySpeed = (touch.position.y - userInput.y) / 275;
+                    transform.position = posss;
+                }
+                else if (touch.phase == TouchPhase.Ended)
+                {
+                    userInputStarted = false;
+                    joystickIsAtIndex = -1;
+                    xSpeed = 0;
+                    ySpeed = 0;
+                }
             }
         }
 
