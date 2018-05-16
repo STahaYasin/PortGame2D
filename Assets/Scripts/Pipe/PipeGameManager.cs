@@ -12,8 +12,12 @@ public class PipeGameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        startPipes();
 	}
+    void startPipes()
+    {
+        foreach (Pipe pipe in pipeArray) pipe.Begin();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -27,6 +31,11 @@ public class PipeGameManager : MonoBehaviour {
         }
 
         gameFinnished |= a;
+
+        if (gameFinnished)
+        {
+            foreach (Pipe pipe in pipeArray) pipe.Stop();
+        }
 
         checkStatsus();
 	}

@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 648
     width: 433
     height: 309
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 192}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 321
+  controlID: 142
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: TahaYasin_ConsoleRightBottom
+  m_LastLoadedLayoutName: 
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 917, y: 442}
+  m_MinSize: {x: 1077, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 95
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,10 +181,10 @@ MonoBehaviour:
     y: 0
     width: 835
     height: 957
-  m_MinSize: {x: 202, y: 442}
+  m_MinSize: {x: 362, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 49
+  controlID: 12
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,14 +278,14 @@ MonoBehaviour:
     y: 0
     width: 835
     height: 491
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 362, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 20}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ResetOnNextRepaint: 0
   m_IgnoreNextPostprocessEvent: 0
-  m_SelectedAssetPath: Assets/Spritesheets/Pipe/pipesheet.png
+  m_SelectedAssetPath: Assets/Spritesheets/Map/MapSpriteSheet1.png
   m_Selected:
     m_Name: 
     m_OriginalName: 
@@ -411,9 +411,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ca5b0000
-    m_LastClickedID: 23498
-    m_ExpandedIDs: 348afffff68affff248cffffe08cffffc495ffff84fbffff00000000
+    m_SelectedIDs: c43b0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 8e81ffff1683ffff24c8ffff70defffffee0ffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -432,7 +432,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - PipeGameTest
+  - TestScene_Taha_01
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -463,7 +463,7 @@ MonoBehaviour:
     width: 431
     height: 627
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 129.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -509,7 +509,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Spritesheets/Pipe
+    - Assets/Spritesheets/Map
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -520,7 +520,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 2c260000
     m_LastClickedID: 9772
-    m_ExpandedIDs: 00000000a2270000aa270000b0270000bc270000c4270000cc270000d42b0000d62b00005a390000623900007239000092390000a8390000b2390000b4390000be390000c2390000303b0000323b00009e3b0000a03b0000
+    m_ExpandedIDs: 000000009e270000a6270000ac270000b8270000c0270000c8270000d02b0000d22b0000563900005e3900006e3900008e390000a4390000ae390000b0390000ba390000be3900002c3b00002e3b0000ac3b0000ae3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -548,7 +548,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a2270000aa270000b0270000bc270000c4270000cc270000d42b0000d62b00005a390000623900007239000092390000a8390000b2390000b4390000be390000c2390000303b0000323b00009e3b0000a03b0000
+    m_ExpandedIDs: 000000009e270000a6270000ac270000b8270000c0270000c8270000d02b0000d22b0000563900005e3900006e3900008e390000a4390000b0390000ba390000be3900002c3b00002e3b0000ac3b0000ae3b0000c23b0000c43b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -648,7 +648,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -660,20 +660,20 @@ MonoBehaviour:
       y: 17
       width: 833
       height: 428
-    m_Scale: {x: 0.40818518, y: 0.40818518}
-    m_Translation: {x: 416.5, y: 219.1}
+    m_Scale: {x: 0.3962963, y: 0.3962963}
+    m_Translation: {x: 416.5, y: 214}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1020.3702
-      y: -536.7662
-      width: 2040.7404
-      height: 1048.5437
+      x: -1050.9813
+      y: -540
+      width: 2101.9626
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.3962963
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 833, y: 445}
@@ -709,13 +709,13 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 307.0682498508807
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.5440507, y: 1.5779302, z: 1.4552808}
+    m_Target: {x: 7.160707, y: -5.726375, z: 1.5263672}
     speed: 2
-    m_Value: {x: -6.5440507, y: 1.5779302, z: 1.4552808}
+    m_Value: {x: 7.160707, y: -5.726375, z: 1.5263672}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -731,25 +731,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.11747286, y: -0.40896627, z: 0.05318004, w: 0.90339285}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.11747286, y: -0.40896627, z: 0.05318004, w: 0.90339285}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.380504
+    m_Target: 6.0953298
     speed: 2
-    m_Value: 13.380504
+    m_Value: 6.0953298
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_ShowGlobalGrid: 1
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pipe : MonoBehaviour {
 
+    private bool isPlaying = false;
+
     public int PipeIsLookingTo = 0;
     public int PipeHasToLookTo = 0;
     public bool DirectionDoesntMather = false;
@@ -17,8 +19,18 @@ public class Pipe : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void Begin()
+    {
+        isPlaying = true;
+    }
+    public void Stop()
+    {
+        isPlaying = false;
+    }
     void OnMouseDown()
     {
+        if (!isPlaying) return;
+
         Debug.Log("click");
 
         clicks++;
