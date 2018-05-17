@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Http\ApplicationHttp.cs" />
      <Compile Include="Assets\Scripts\Map\LongGrass.cs" />
      <Compile Include="Assets\Scripts\Map\Regions.cs" />
      <Compile Include="Assets\Scripts\Pipe\Pipe.cs" />

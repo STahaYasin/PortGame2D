@@ -1,0 +1,2 @@
+X:\Artesis Plantijn\3EA Semester 2\PortGame2D\PortGame2D\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+X:\Artesis Plantijn\3EA Semester 2\PortGame2D\PortGame2D\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
