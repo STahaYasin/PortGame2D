@@ -4,7 +4,7 @@ using System.Net;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class ApplicationHttp : MonoBehaviour {
+public class ApplicationHttp{
 
 	void Start () {
 		
@@ -13,7 +13,7 @@ public class ApplicationHttp : MonoBehaviour {
 	void Update () {
         
 	}
-    private void Post()
+    public static string Post()
     {
         List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
         formData.Add(new MultipartFormDataSection("data=value"));
@@ -21,23 +21,20 @@ public class ApplicationHttp : MonoBehaviour {
         UnityWebRequest www = UnityWebRequest.Post("http://www.tahayasin.be", formData);
         UnityWebRequest wwww = UnityWebRequest.Get("http://www.tahayasin.be");
 
-        StartCoroutine(Excecute(www));
-    }
-
-    IEnumerator Excecute(UnityWebRequest www)
-    {
         if (www == null) Debug.LogWarning("WWW is empty");
 
-        yield return www.SendWebRequest();
+        www.SendWebRequest();
 
-        if(www.isHttpError || www.isNetworkError)
+        if (www.isHttpError || www.isNetworkError)
         {
             Debug.Log(www.error);
+            return null;
         }
         else
         {
             string text = www.downloadHandler.text;
             Debug.Log(text);
+            return text;
         }
     }
 }

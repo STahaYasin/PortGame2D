@@ -31,6 +31,7 @@ public class Player : Character {
     }
     
 	void Start () {
+        string a = ApplicationHttp.Post();
         Debug.Log("PLayer started");
 
 	}
