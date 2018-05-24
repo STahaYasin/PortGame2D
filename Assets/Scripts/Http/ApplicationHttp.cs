@@ -33,7 +33,7 @@ public class ApplicationHttp{
         else
         {
             string text = www.downloadHandler.text;
-            Debug.Log(text);
+            Debug.Log(text.ToString());
             return text;
         }
     }

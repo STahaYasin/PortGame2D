@@ -44,6 +44,30 @@ TagManager:
   - name: Map
     uniqueID: 283849607
     locked: 0
-  - name: Player
+  - name: 1
     uniqueID: 1668491647
+    locked: 0
+  - name: 2
+    uniqueID: 1724717191
+    locked: 0
+  - name: 3
+    uniqueID: 2434346835
+    locked: 0
+  - name: 4
+    uniqueID: 3489467551
+    locked: 0
+  - name: 5
+    uniqueID: 2343112201
+    locked: 0
+  - name: 6
+    uniqueID: 3243478047
+    locked: 0
+  - name: 7
+    uniqueID: 596617315
+    locked: 0
+  - name: 8
+    uniqueID: 1407392573
+    locked: 0
+  - name: Menu_Item
+    uniqueID: 1495213439
     locked: 0
