@@ -16,9 +16,9 @@ TextureImporter:
     21300018: ground 3_9
     21300020: ground 3_10
     21300022: ground 3_11
-    21300024: ground 3_12
-    21300026: ground 3_13
-    21300028: ground 3_14
+    21300024: Map_Water_Stone_7
+    21300026: Map_Water_Stone_8
+    21300028: Map_Water_Stone_9
     21300030: Map_Gras_Stone_01
     21300032: Map_Gras_Stone_03
     21300034: ground 3_17
@@ -31,26 +31,26 @@ TextureImporter:
     21300048: ground 3_24
     21300050: ground 3_25
     21300052: ground 3_26
-    21300054: ground 3_27
-    21300056: ground 3_28
-    21300058: ground 3_29
+    21300054: Map_Water_Stone_4
+    21300056: Map_Water_Stone_5
+    21300058: Map_Water_Stone_6
     21300060: Map_Sand_Stone_07
     21300062: Map_Sand_Stone_09
-    21300064: ground 3_32
-    21300066: ground 3_33
+    21300064: Map_Water_Stone_07
+    21300066: Map_Water_Stone_09
     21300068: Map_Sand_Stone_1
     21300070: Map_Sand_Stone_2
     21300072: Map_Sand_Stone_3
     21300074: ground 3_37
     21300076: ground 3_38
     21300078: ground 3_39
-    21300080: ground 3_40
-    21300082: ground 3_41
-    21300084: ground 3_42
+    21300080: Map_Water_Stone_1
+    21300082: Map_Water_Stone_2
+    21300084: Map_Water_Stone_3
     21300086: Map_Sand_Stone_01
     21300088: Map_Sand_Stone_03
-    21300090: ground 3_45
-    21300092: ground 3_46
+    21300090: Map_Water_Stone_01
+    21300092: Map_Water_Stone_03
     21300094: ground 3_47
     21300096: ground 3_48
     21300098: ground 3_49
@@ -158,8 +158,8 @@ TextureImporter:
     21300302: ground 3_151
     21300304: ground 3_152
     21300306: ground 3_153
-    21300308: ground 3_154
-    21300310: ground 3_155
+    21300308: Map_Stone_Water_07
+    21300310: Map_Stone_Water_09
     21300312: ground 3_156
     21300314: ground 3_157
     21300316: ground 3_158
@@ -173,8 +173,8 @@ TextureImporter:
     21300332: ground 3_166
     21300334: ground 3_167
     21300336: ground 3_168
-    21300338: ground 3_169
-    21300340: ground 3_170
+    21300338: Map_Stone_Water_01
+    21300340: Map_Stone_Water_03
     21300342: ground 3_171
     21300344: ground 3_172
     21300346: ground 3_173
@@ -233,8 +233,8 @@ TextureImporter:
     21300452: ground 3_226
     21300454: Map_Gras_Sand_07
     21300456: Map_Gras_Sand_09
-    21300458: ground 3_229
-    21300460: ground 3_230
+    21300458: Map_Dirt_Sand_07
+    21300460: Map_Dirt_Sand_09
     21300462: Map_Water_Sand_7
     21300464: Map_Water_Sand_8
     21300466: Map_Water_Sand_9
@@ -246,8 +246,8 @@ TextureImporter:
     21300478: Map_Stone_Sand_9
     21300480: Map_Gras_Sand_01
     21300482: Map_Gras_Sand_03
-    21300484: ground 3_242
-    21300486: ground 3_243
+    21300484: Map_Dirt_Sand_01
+    21300486: Map_Dirt_Sand_03
     21300488: Map_Water_Sand_4
     21300490: Map_Water_Sand_5
     21300492: Map_Water_Sand_6
@@ -269,21 +269,21 @@ TextureImporter:
     21300524: ground 3_262
     21300526: ground 3_263
     21300528: ground 3_264
-    21300530: ground 3_265
-    21300532: ground 3_266
-    21300534: ground 3_267
+    21300530: Map_Dirt_Sand_7
+    21300532: Map_Dirt_Sand_8
+    21300534: Map_Dirt_Sand_9
     21300536: ground 3_268
     21300538: ground 3_269
     21300540: ground 3_270
-    21300542: ground 3_271
-    21300544: ground 3_272
-    21300546: ground 3_273
+    21300542: Map_Dirt_Sand_4
+    21300544: Map_Dirt_Sand_5
+    21300546: Map_Dirt_Sand_6
     21300548: ground 3_274
     21300550: ground 3_275
     21300552: ground 3_276
-    21300554: ground 3_277
-    21300556: ground 3_278
-    21300558: ground 3_279
+    21300554: Map_Dirt_Sand_1
+    21300556: Map_Dirt_Sand_2
+    21300558: Map_Dirt_Sand_3
     21300560: ground 3_280
     21300562: ground 3_281
     21300564: ground 3_282
@@ -315,21 +315,21 @@ TextureImporter:
     21300616: ground 3_308
     21300618: ground 3_309
     21300620: ground 3_310
-    21300622: ground 3_311
-    21300624: ground 3_312
-    21300626: ground 3_313
+    21300622: Map_Stone_Water_7
+    21300624: Map_Stone_Water_8
+    21300626: Map_Stone_Water_9
     21300628: ground 3_314
     21300630: ground 3_315
     21300632: ground 3_316
-    21300634: ground 3_317
-    21300636: ground 3_318
-    21300638: ground 3_319
+    21300634: Map_Stone_Water_4
+    21300636: Map_Stone_Water_5
+    21300638: Map_Stone_Water_6
     21300640: ground 3_320
     21300642: ground 3_321
     21300644: ground 3_322
-    21300646: ground 3_323
-    21300648: ground 3_324
-    21300650: ground 3_325
+    21300646: Map_Stone_Water_1
+    21300648: Map_Stone_Water_2
+    21300650: Map_Stone_Water_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -595,7 +595,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_12
+      name: Map_Water_Stone_7
       rect:
         serializedVersion: 2
         x: 768
@@ -609,7 +609,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_13
+      name: Map_Water_Stone_8
       rect:
         serializedVersion: 2
         x: 832
@@ -623,7 +623,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_14
+      name: Map_Water_Stone_9
       rect:
         serializedVersion: 2
         x: 896
@@ -805,7 +805,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_27
+      name: Map_Water_Stone_4
       rect:
         serializedVersion: 2
         x: 768
@@ -819,7 +819,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_28
+      name: Map_Water_Stone_5
       rect:
         serializedVersion: 2
         x: 832
@@ -833,7 +833,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_29
+      name: Map_Water_Stone_6
       rect:
         serializedVersion: 2
         x: 896
@@ -875,7 +875,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_32
+      name: Map_Water_Stone_07
       rect:
         serializedVersion: 2
         x: 128
@@ -889,7 +889,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_33
+      name: Map_Water_Stone_09
       rect:
         serializedVersion: 2
         x: 192
@@ -987,7 +987,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_40
+      name: Map_Water_Stone_1
       rect:
         serializedVersion: 2
         x: 768
@@ -1001,7 +1001,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_41
+      name: Map_Water_Stone_2
       rect:
         serializedVersion: 2
         x: 832
@@ -1015,7 +1015,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_42
+      name: Map_Water_Stone_3
       rect:
         serializedVersion: 2
         x: 896
@@ -1057,7 +1057,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_45
+      name: Map_Water_Stone_01
       rect:
         serializedVersion: 2
         x: 128
@@ -1071,7 +1071,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_46
+      name: Map_Water_Stone_03
       rect:
         serializedVersion: 2
         x: 192
@@ -2583,7 +2583,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_154
+      name: Map_Stone_Water_07
       rect:
         serializedVersion: 2
         x: 256
@@ -2597,7 +2597,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_155
+      name: Map_Stone_Water_09
       rect:
         serializedVersion: 2
         x: 320
@@ -2793,7 +2793,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_169
+      name: Map_Stone_Water_01
       rect:
         serializedVersion: 2
         x: 256
@@ -2807,7 +2807,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_170
+      name: Map_Stone_Water_03
       rect:
         serializedVersion: 2
         x: 320
@@ -3633,7 +3633,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_229
+      name: Map_Dirt_Sand_07
       rect:
         serializedVersion: 2
         x: 128
@@ -3647,7 +3647,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_230
+      name: Map_Dirt_Sand_09
       rect:
         serializedVersion: 2
         x: 192
@@ -3815,7 +3815,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_242
+      name: Map_Dirt_Sand_01
       rect:
         serializedVersion: 2
         x: 128
@@ -3829,7 +3829,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_243
+      name: Map_Dirt_Sand_03
       rect:
         serializedVersion: 2
         x: 192
@@ -4137,7 +4137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_265
+      name: Map_Dirt_Sand_7
       rect:
         serializedVersion: 2
         x: 768
@@ -4151,7 +4151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_266
+      name: Map_Dirt_Sand_8
       rect:
         serializedVersion: 2
         x: 832
@@ -4165,7 +4165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_267
+      name: Map_Dirt_Sand_9
       rect:
         serializedVersion: 2
         x: 896
@@ -4221,7 +4221,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_271
+      name: Map_Dirt_Sand_4
       rect:
         serializedVersion: 2
         x: 768
@@ -4235,7 +4235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_272
+      name: Map_Dirt_Sand_5
       rect:
         serializedVersion: 2
         x: 832
@@ -4249,7 +4249,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_273
+      name: Map_Dirt_Sand_6
       rect:
         serializedVersion: 2
         x: 896
@@ -4305,7 +4305,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_277
+      name: Map_Dirt_Sand_1
       rect:
         serializedVersion: 2
         x: 768
@@ -4319,7 +4319,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_278
+      name: Map_Dirt_Sand_2
       rect:
         serializedVersion: 2
         x: 832
@@ -4333,7 +4333,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_279
+      name: Map_Dirt_Sand_3
       rect:
         serializedVersion: 2
         x: 896
@@ -4781,7 +4781,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_311
+      name: Map_Stone_Water_7
       rect:
         serializedVersion: 2
         x: 768
@@ -4795,7 +4795,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_312
+      name: Map_Stone_Water_8
       rect:
         serializedVersion: 2
         x: 832
@@ -4809,7 +4809,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_313
+      name: Map_Stone_Water_9
       rect:
         serializedVersion: 2
         x: 896
@@ -4865,7 +4865,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_317
+      name: Map_Stone_Water_4
       rect:
         serializedVersion: 2
         x: 768
@@ -4879,7 +4879,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_318
+      name: Map_Stone_Water_5
       rect:
         serializedVersion: 2
         x: 832
@@ -4893,7 +4893,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_319
+      name: Map_Stone_Water_6
       rect:
         serializedVersion: 2
         x: 896
@@ -4949,7 +4949,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_323
+      name: Map_Stone_Water_1
       rect:
         serializedVersion: 2
         x: 768
@@ -4963,7 +4963,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_324
+      name: Map_Stone_Water_2
       rect:
         serializedVersion: 2
         x: 832
@@ -4977,7 +4977,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ground 3_325
+      name: Map_Stone_Water_3
       rect:
         serializedVersion: 2
         x: 896
