@@ -25,6 +25,8 @@ public class Player : Character {
     private float xSpeed = 0;
     private float ySpeed = 0;
 
+    private List<Item> collectedItems;
+
     public Player()
     {
         
@@ -33,6 +35,8 @@ public class Player : Character {
 	void Start () {
         string a = ApplicationHttp.Post();
         Debug.Log("PLayer started");
+
+        collectedItems = new List<Item>();
 
 	}
     void OnGUI()
@@ -189,5 +193,13 @@ public class Player : Character {
     {
         //Output the Collider's GameObject's name
         Debug.Log("fbgfb");
+    }
+
+    public void AddCollectingItem(Item item)
+    {
+        if (item == null) return;
+
+        collectedItems.Add(item);
+        Debug.Log(collectedItems[collectedItems.Count - 1].GetName());
     }
 }
