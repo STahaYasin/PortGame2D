@@ -21,6 +21,9 @@ public class Player : Character {
     private float joyStickX = 0;
     private float joyStickY = 0;
 
+    public Texture2D collectableEmpty;
+    public Texture2D collectableBackground;
+
     //Floats to hold the input move speed
     private float xSpeed = 0;
     private float ySpeed = 0;
@@ -33,14 +36,30 @@ public class Player : Character {
     }
     
 	void Start () {
-        string a = ApplicationHttp.Post();
-        Debug.Log("PLayer started");
+        //string a = ApplicationHttp.Post();
 
         collectedItems = new List<Item>();
 
 	}
     void OnGUI()
     {
+        //Collectables
+        int countOfCollectables = 25;
+        float screenWidth = Screen.width;
+        float itemTotalWidth = screenWidth / countOfCollectables;
+        float itemMargin = itemTotalWidth / 5;
+        float itemWidth = itemTotalWidth - (itemMargin * 2);
+
+        GUI.DrawTexture(new Rect(0, 0, screenWidth, itemWidth + (itemMargin * 2)), collectableBackground);
+
+        for (int i = 0; i < countOfCollectables; i++)
+        {
+            Rect rect = new Rect((itemTotalWidth * i) + itemMargin, itemMargin, itemWidth, itemWidth);
+            GUI.DrawTexture(rect, collectableEmpty);
+        }
+
+
+        //Joystick
         if (userInputStarted)
         {
             int joystickSize = Screen.width / 6;
@@ -201,5 +220,30 @@ public class Player : Character {
 
         collectedItems.Add(item);
         Debug.Log(collectedItems[collectedItems.Count - 1].GetName());
+    }
+
+    public void GotString(string s)
+    {
+        Debug.Log(s);
+    }
+    private void AskData()
+    {
+        string url = "http://tahayasin.be/api/testunity.php";
+
+        StartCoroutine(GetData(url));
+    }
+    private IEnumerator<string> GetData(string url)
+    {
+        using (WWW www = new WWW(url))
+        {
+            yield return www.text;
+            GotData(www.text);
+        }
+    }
+    private void GotData(string s)
+    {
+        Debug.Log("Http ----->");
+        Debug.Log(s);
+        Debug.Log("<-----");
     }
 }

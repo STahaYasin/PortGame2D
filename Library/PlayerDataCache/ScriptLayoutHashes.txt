@@ -20,6 +20,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Character
+0194a29a0fa19282f513e0c4452345ec Assembly-CSharp.dll:.MapBorder
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -123,6 +124,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 1c675eb789a2fa43656b6ff5a3e7bcdc Assembly-CSharp.dll:.SpriteHolder
 cda5b3b56f27340374524624083d3955 Assembly-CSharp.dll:.PlayerMovement
+85428d1425a367fca79ad826587547f8 Assembly-CSharp.dll:.Item
 a5bbced085ec716c1222bc9746385817 Assembly-CSharp.dll:.PipeGameManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -158,4 +160,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 b946c095af342fed183d7ab4d6c4d8cd Assembly-CSharp.dll:.MoveThePlayer
 0875d4f5f1c14d1cd8cf0d6b6126dca6 Assembly-CSharp.dll:.LevelAction
-55768e883dae555ce0d868498fcf7a7c Assembly-CSharp.dll:.Player
+65985e75336d60cc6868dbe2d7f59df7 Assembly-CSharp.dll:.Player
