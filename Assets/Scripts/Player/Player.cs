@@ -58,9 +58,6 @@ public class Player : Character {
             GUI.DrawTexture(rect, collectableEmpty);
         }
 
-        PlayerPrefs.
-
-
         //Joystick
         if (userInputStarted)
         {
