@@ -68,6 +68,21 @@ TagManager:
   - name: 8
     uniqueID: 1407392573
     locked: 0
+  - name: 9
+    uniqueID: 1521788343
+    locked: 0
+  - name: Player
+    uniqueID: 2353553723
+    locked: 0
+  - name: 10
+    uniqueID: 1704343153
+    locked: 0
+  - name: 11
+    uniqueID: 3196131799
+    locked: 0
+  - name: 12
+    uniqueID: 2791135099
+    locked: 0
   - name: Menu_Item
     uniqueID: 1495213439
     locked: 0
