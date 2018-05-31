@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene_Taha_01.unity
     guid: 9152065c9bf38b745b2994370f6eec24
+  - enabled: 1
+    path: Assets/Scenes/Level_1_BoatGame.unity
+    guid: 10abccba8d571854daa5bee63c0282bb

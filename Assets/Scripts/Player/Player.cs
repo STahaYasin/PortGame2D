@@ -28,7 +28,8 @@ public class Player : Character {
     private float xSpeed = 0;
     private float ySpeed = 0;
 
-    private List<Item> collectedItems;
+    //private List<Item> collectedItems;
+    public ItemHolder itemHolder;
 
     public Player()
     {
@@ -38,25 +39,11 @@ public class Player : Character {
 	void Start () {
         //string a = ApplicationHttp.Post();
 
-        collectedItems = new List<Item>();
-
-	}
+    }
     void OnGUI()
     {
         //Collectables
-        int countOfCollectables = 25;
-        float screenWidth = Screen.width;
-        float itemTotalWidth = screenWidth / countOfCollectables;
-        float itemMargin = itemTotalWidth / 5;
-        float itemWidth = itemTotalWidth - (itemMargin * 2);
-
-        GUI.DrawTexture(new Rect(0, 0, screenWidth, itemWidth + (itemMargin * 2)), collectableBackground);
-
-        for (int i = 0; i < countOfCollectables; i++)
-        {
-            Rect rect = new Rect((itemTotalWidth * i) + itemMargin, itemMargin, itemWidth, itemWidth);
-            GUI.DrawTexture(rect, collectableEmpty);
-        }
+        itemHolder.Draw();
 
         //Joystick
         if (userInputStarted)
@@ -215,10 +202,7 @@ public class Player : Character {
 
     public void AddCollectingItem(Item item)
     {
-        if (item == null) return;
-
-        collectedItems.Add(item);
-        Debug.Log(collectedItems[collectedItems.Count - 1].GetName());
+        itemHolder.AddItem(item);
     }
 
     public void GotString(string s)

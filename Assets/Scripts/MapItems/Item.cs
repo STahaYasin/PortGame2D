@@ -6,6 +6,9 @@ using UnityEngine;
 public class Item : MonoBehaviour {
 
     public string name = "";
+
+    public Texture2D MiniTexture;
+
     private string kind = "";
     private int value = 0;
 
