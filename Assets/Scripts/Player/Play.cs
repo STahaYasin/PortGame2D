@@ -8,6 +8,7 @@ public class Play : MonoBehaviour
 
     public int LevelToLoad = 0;
     public bool QuitApplication = false;
+    public bool RotateAtLeave = false;
 
     public InputField input;
 
@@ -50,7 +51,7 @@ public class Play : MonoBehaviour
             }
         }
 
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
+        if(RotateAtLeave) Screen.orientation = ScreenOrientation.LandscapeLeft;
 
         if (QuitApplication)
         {

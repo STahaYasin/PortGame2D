@@ -1063,6 +1063,63 @@ Transform:
   m_Father: {fileID: 1211211636}
   m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &253568996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 253568999}
+  - component: {fileID: 253568998}
+  - component: {fileID: 253568997}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &253568997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253568996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a08c1bb32f254a4894fe81bbbc2b1d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 1
+  QuitApplication: 0
+  RotateAtLeave: 0
+  input: {fileID: 808540865}
+--- !u!65 &253568998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253568996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22848882, y: 1.6130139, z: 1}
+  m_Center: {x: 0.030564867, y: -0.12930787, z: 0}
+--- !u!4 &253568999
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253568996}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.067, y: -1.655, z: 0}
+  m_LocalScale: {x: 1.4374334, y: 0.5400001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &280524207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,8 +3027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a08c1bb32f254a4894fe81bbbc2b1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 1
+  LevelToLoad: 2
   QuitApplication: 0
+  RotateAtLeave: 1
   input: {fileID: 808540865}
 --- !u!1 &743113517
 GameObject:
