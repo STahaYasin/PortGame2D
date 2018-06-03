@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\SpriteHolder.cs" />
      <Compile Include="Assets\Scripts\Results\Result.cs" />
+     <Compile Include="Assets\Scripts\Results\ResultForJoin.cs" />
      <Compile Include="Assets\Scripts\ServerSettings\ServerSets.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -3029,7 +3029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelToLoad: 2
   QuitApplication: 0
-  RotateAtLeave: 1
+  RotateAtLeave: 0
   input: {fileID: 808540865}
 --- !u!1 &743113517
 GameObject:

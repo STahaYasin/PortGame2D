@@ -19,6 +19,7 @@ public class StaticMembers : MonoBehaviour {
 	}
     public static string GetUrl()
     {
+        if (!PlayerPrefs.HasKey(ServerRemoteName)) return Host;
         if(PlayerPrefs.GetInt(ServerRemoteName, 1) == 1)
         {
             return Host;
@@ -31,5 +32,9 @@ public class StaticMembers : MonoBehaviour {
     public static string GetUrlWithSlash()
     {
         return GetUrl() + "/";
+    }
+    public static string GetRootUrlWithSlash()
+    {
+        return GetUrlWithSlash() + "port/port/app/";
     }
 }
