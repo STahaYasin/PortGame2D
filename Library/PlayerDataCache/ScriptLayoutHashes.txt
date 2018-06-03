@@ -170,7 +170,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 b60ad94c8cda70a98a84a09e9e6381aa Assembly-CSharp.dll:.PLayButton
 b946c095af342fed183d7ab4d6c4d8cd Assembly-CSharp.dll:.MoveThePlayer
 0875d4f5f1c14d1cd8cf0d6b6126dca6 Assembly-CSharp.dll:.LevelAction
-ee4c34c8f6f687778c1cb040135b0c6c Assembly-CSharp.dll:.JoinGroup
+6784d71e5bcb2bf25e663d60bbc1c4ef Assembly-CSharp.dll:.JoinGroup
 7e42f6f78780ad1200cb24257aaec61c Assembly-CSharp.dll:.Player
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StaticMembers
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ConnectToGroup

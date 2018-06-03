@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Connect\ConnectToGroup.cs" />
      <Compile Include="Assets\Scripts\Connect\JoinGroup.cs" />
+     <Compile Include="Assets\Scripts\Connect\JoinTeam.cs" />
      <Compile Include="Assets\Scripts\Connect\StaticMembers.cs" />
      <Compile Include="Assets\Scripts\Map\LongGrass.cs" />
      <Compile Include="Assets\Scripts\Map\Regions.cs" />
