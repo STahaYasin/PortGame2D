@@ -7,7 +7,7 @@ public class Player : Character {
 
     public CharacterController controller;
 
-    public float MoveSpeed = 1f;
+    public float MoveSpeed = 0.2f;
 
     public SpriteHolder spriteHolder;
     public SpriteRenderer spriteRenderer;
@@ -186,7 +186,7 @@ public class Player : Character {
         moveDirection = new Vector3(xSpeed * MoveSpeed, ySpeed * MoveSpeed, 0);
         moveDirection = transform.TransformDirection(moveDirection);
 
-        controller.Move(moveDirection * Time.deltaTime);
+        controller.Move(moveDirection * (Time.deltaTime / 1.5f));
 
     }
     private void setSprite()

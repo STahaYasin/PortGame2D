@@ -8,6 +8,8 @@ public class ItemHolder: MonoBehaviour {
     public Texture2D collectableEmpty;
     public Texture2D boxBackground;
 
+    public GameObject panel;
+
     private bool userCollectionsOpened = false;
 
     private List<Item> collectedItems = new List<Item>();
@@ -26,7 +28,7 @@ public class ItemHolder: MonoBehaviour {
     }
 	
 	void Update () {
-		
+        panel.SetActive(userCollectionsOpened);
 	}
     public void Draw()
     {
@@ -38,7 +40,7 @@ public class ItemHolder: MonoBehaviour {
     private void DrawCollectables()
     {
         //GUI.DrawTexture(boxRect, boxBackground);
-        GUI.TextArea(boxRect, Screen.width.ToString() + Screen.height.ToString());
+        /*GUI.TextArea(boxRect, Screen.width.ToString() + Screen.height.ToString());
 
         int countOfCollectables = 25;
         float screenWidth = Screen.width;
@@ -57,7 +59,7 @@ public class ItemHolder: MonoBehaviour {
         {
             Rect rect = new Rect((itemTotalWidth * i) + itemMargin, itemMargin, itemWidth, itemWidth);
             GUI.DrawTexture(rect, collectedItems[i].MiniTexture);
-        }
+        }*/
     }
     void OnMouseUp()
     {

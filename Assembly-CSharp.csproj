@@ -70,13 +70,18 @@
      <Compile Include="Assets\Scripts\Player\MapBorder.cs" />
      <Compile Include="Assets\Scripts\Player\MenuClick.cs" />
      <Compile Include="Assets\Scripts\Player\MoveThePlayer.cs" />
+     <Compile Include="Assets\Scripts\Player\NetworkManagerUserLocations.cs" />
      <Compile Include="Assets\Scripts\Player\Play.cs" />
      <Compile Include="Assets\Scripts\Player\PLayButton.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\SpriteHolder.cs" />
+     <Compile Include="Assets\Scripts\Player\TeamPlayer.cs" />
+     <Compile Include="Assets\Scripts\Player\UIButtonLevelLoader.cs" />
      <Compile Include="Assets\Scripts\Results\Result.cs" />
      <Compile Include="Assets\Scripts\Results\ResultForJoin.cs" />
+     <Compile Include="Assets\Scripts\Results\ResultForUserPos.cs" />
+     <Compile Include="Assets\Scripts\Results\UserPos.cs" />
      <Compile Include="Assets\Scripts\ServerSettings\ServerSets.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

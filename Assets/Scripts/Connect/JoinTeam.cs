@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class JoinTeam : MonoBehaviour {
 
     public int LevelToLoad = 0;
+    public bool RotateDisplayAtLeave = false;
 
     public InputField i_teamid;
     public Text text;
@@ -83,6 +84,7 @@ public class JoinTeam : MonoBehaviour {
     }
     void go()
     {
+        if (RotateDisplayAtLeave) Screen.orientation = ScreenOrientation.LandscapeLeft;
         Application.LoadLevel(LevelToLoad);
     }
 }

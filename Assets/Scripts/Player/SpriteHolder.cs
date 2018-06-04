@@ -8,7 +8,7 @@ public class SpriteHolder : MonoBehaviour
     private int currentSpriteState = 5; // 5 Means not moving
     private int currentAnimState = 0;
     private float lastUpdateTime = 0;
-    private float updateCooler = 0.2f;
+    private float updateCooler = 0.25f;
     
 
     public Sprite[] Sprites_NotMoving;

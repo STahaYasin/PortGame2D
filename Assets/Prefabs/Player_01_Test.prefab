@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1414737912701014
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,21 +182,21 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.01
-    y: 0.7
-    width: 0.2
-    height: 0.2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.22
+  orthographic size: 6.18
   m_Depth: 25
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294966527
+    m_Bits: 4294966495
   m_RenderingPath: 1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 69356ca6f3b506642b05f603d66b6861, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -375,6 +375,8 @@ MonoBehaviour:
   collectableBackground: {fileID: 2800000, guid: 1cccb745e51c0494e90bad223a42517b,
     type: 3}
   collectableEmpty: {fileID: 2800000, guid: dbc11721da479c94dba0c95ece7c37c0, type: 3}
+  boxBackground: {fileID: 2800000, guid: cad735b17285de24d98fa376aaad9855, type: 3}
+  panel: {fileID: 0}
 --- !u!114 &114476982996791378
 MonoBehaviour:
   m_ObjectHideFlags: 1
