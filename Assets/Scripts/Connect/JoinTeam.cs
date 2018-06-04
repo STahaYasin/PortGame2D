@@ -6,12 +6,25 @@ using UnityEngine.UI;
 
 public class JoinTeam : MonoBehaviour {
 
+    public int LevelToLoad = 0;
+
     public InputField i_teamid;
     public Text text;
 
+    bool ready = false;
+
 	// Use this for initialization
 	void Start () {
-		
+        string teamid = PlayerPrefs.GetString("team_id", null);
+        if(teamid == null || teamid == "")
+        {
+            ready = true;
+        }
+        else
+        {
+            go();
+        }
+        ready = true;
 	}
 	
 	// Update is called once per frame
@@ -20,17 +33,19 @@ public class JoinTeam : MonoBehaviour {
 	}
     public void JoinT()
     {
-        Upload();
+        StartCoroutine(Upload());
     }
     IEnumerator Upload()
     {
         string groupid = PlayerPrefs.GetString("group_id", null);
         string teamid = i_teamid.text;
+        string userid = PlayerPrefs.GetString("user_id", null);
 
         string url = StaticMembers.GetRootUrlWithSlash() + "jointeam.php";
         WWWForm form = new WWWForm();
         form.AddField("groupid", groupid);
         form.AddField("teamid", teamid);
+        form.AddField("userid", userid);
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
@@ -49,6 +64,25 @@ public class JoinTeam : MonoBehaviour {
     }
     void gotResult(string s)
     {
+        ResultForJoin res = JsonUtility.FromJson<ResultForJoin>(s);
+        if (res.success)
+        {
+            text.text = res.message;
+            storeAndGo(res.data);
+        }
+        else
+        {
+            text.text = res.message;
+        }
+    }
+    void storeAndGo(int teamid)
+    {
+        PlayerPrefs.SetString("team_id", teamid.ToString());
 
+        go();
+    }
+    void go()
+    {
+        Application.LoadLevel(LevelToLoad);
     }
 }
