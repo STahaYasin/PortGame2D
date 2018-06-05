@@ -104,6 +104,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+5622ec5ee439278b2b107ac8c109ebb0 Assembly-CSharp.dll:.TeamPlayer
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -128,7 +129,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-5536fbf8cdea2f855ca2101358e6dce8 Assembly-CSharp.dll:.ItemHolder
+ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.ItemHolder
 1c675eb789a2fa43656b6ff5a3e7bcdc Assembly-CSharp.dll:.SpriteHolder
 cda5b3b56f27340374524624083d3955 Assembly-CSharp.dll:.PlayerMovement
 b8f0851cbcbaaa85808e5dd8cfab22ad Assembly-CSharp.dll:.Item
@@ -166,6 +167,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 77de36fde2adee0acbf747f2c9036c5b Assembly-CSharp.dll:.ServerSets
+e810c85babccab4a29285a0e0bb27572 Assembly-CSharp.dll:.UIButtonLevelLoader
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 b60ad94c8cda70a98a84a09e9e6381aa Assembly-CSharp.dll:.PLayButton
 b946c095af342fed183d7ab4d6c4d8cd Assembly-CSharp.dll:.MoveThePlayer
@@ -173,8 +175,6 @@ b946c095af342fed183d7ab4d6c4d8cd Assembly-CSharp.dll:.MoveThePlayer
 6784d71e5bcb2bf25e663d60bbc1c4ef Assembly-CSharp.dll:.JoinGroup
 2be07298c39dfda1843baf145a866eac Assembly-CSharp.dll:.JoinTeam
 7e42f6f78780ad1200cb24257aaec61c Assembly-CSharp.dll:.Player
+1677739cb69ee81fd4e57cdc539b3899 Assembly-CSharp.dll:.NetworkManagerUserLocations
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StaticMembers
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ConnectToGroup
-e810c85babccab4a29285a0e0bb27572 Assembly-CSharp.dll:.UIButtonLevelLoader
-5860dab0484d9133284a4cecd3e349c2 Assembly-CSharp.dll:.NetworkManagerUserLocations
-5622ec5ee439278b2b107ac8c109ebb0 Assembly-CSharp.dll:.TeamPlayer

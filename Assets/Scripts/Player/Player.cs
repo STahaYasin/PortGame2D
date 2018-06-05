@@ -67,6 +67,7 @@ public class Player : Character {
 	void Update () {
 
         if (spriteHolder == null) return;
+        if (userInputStarted) itemHolder.CloseCollectionsBox();
 
         move();
 
@@ -84,7 +85,7 @@ public class Player : Character {
         for (int i = 0; i < Input.touchCount; i++)
         {
             Touch touch = Input.touches[i];
-            if(touch.position.x < (Screen.width / 2))
+            if (touch.position.x < (Screen.width / 2) - (Screen.width / 8))
             {
                 if (!joystickIsAlreadyTouched)
                 {

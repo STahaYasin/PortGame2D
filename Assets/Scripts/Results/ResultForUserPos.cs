@@ -7,6 +7,7 @@ using UnityEngine;
 public class ResultForUserPos
 {
     public bool success;
+    public int status;
     public string message;
     public UserPos[] data;
 }

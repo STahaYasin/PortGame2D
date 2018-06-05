@@ -2,18 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class NetworkManagerUserLocations : MonoBehaviour {
 
     public GameObject Player;
 
+    public GameObject PauseScreen;
+    public Text pauseText;
+
+    public bool IsPausedByPlayer = false;
+    public bool IsPuasedByAdmin = true;
+
     private string userid;
+    private string groupid;
 
     public TeamPlayer[] TeamMembers;
 
 	// Use this for initialization
 	void Start () {
         userid = PlayerPrefs.GetString("user_id", null);
+        groupid = PlayerPrefs.GetString("group_id", null);
         if (userid == null) Application.LoadLevel(0);
 
         UpdatePos();
@@ -21,8 +30,9 @@ public class NetworkManagerUserLocations : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        PauseScreen.SetActive(IsPausedByPlayer || IsPuasedByAdmin);
+        pauseText.text = (IsPuasedByAdmin? "GAME IS PAUSED BY THE ADMIN": "PAUSE");
+    }
 
     void UpdatePos()
     {
@@ -38,6 +48,7 @@ public class NetworkManagerUserLocations : MonoBehaviour {
         string url = StaticMembers.GetRootUrlWithSlash() + "updatepos.php";
         WWWForm form = new WWWForm();
         form.AddField("userid", userid);
+        form.AddField("groupid", groupid);
         form.AddField("x", Player.transform.position.x.ToString());
         form.AddField("y", Player.transform.position.y.ToString());
         form.AddField("level", "0.1");
@@ -64,6 +75,7 @@ public class NetworkManagerUserLocations : MonoBehaviour {
     void gotResult(string s)
     {
         ResultForUserPos res = JsonUtility.FromJson<ResultForUserPos>(s);
+        IsPuasedByAdmin = res.status != 1;
 
         Debug.Log(res.data.Length);
         
