@@ -7,7 +7,8 @@ public class Item : MonoBehaviour {
 
     public string name = "";
 
-    public Texture2D MiniTexture;
+    public int CollectionItemNumber;
+    //public Sprite MiniTexture;
 
     private string kind = "";
     private int value = 0;
@@ -32,6 +33,10 @@ public class Item : MonoBehaviour {
 	void Update () {
 		
 	}
+    public Sprite GetTexture()
+    {
+        return null;
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other == null) return;
