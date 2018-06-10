@@ -21,6 +21,10 @@ public class ItemHolder: MonoBehaviour {
     }
 	
 	void Update () {
+        string boolArrayJson = JsonUtility.ToJson(collected);
+        boolArrayJson = collected.ToString();
+        Debug.Log(boolArrayJson);
+
         panel.SetActive(userCollectionsOpened);
 
         if (userCollectionsOpened)
