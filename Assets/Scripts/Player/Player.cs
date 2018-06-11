@@ -31,6 +31,8 @@ public class Player : Character {
     //private List<Item> collectedItems;
     public ItemHolder itemHolder;
 
+    public bool MoveToSavedLocation = false;
+
     public Player()
     {
         
@@ -38,6 +40,12 @@ public class Player : Character {
     
 	void Start () {
         //string a = ApplicationHttp.Post();
+        if (MoveToSavedLocation)
+        {
+            float x = PlayerPrefs.GetFloat("mainmap_x", 0);
+            float y = PlayerPrefs.GetFloat("mainmap_y", 0);
+            transform.position = new Vector3(x, y, 0);
+        }
 
     }
     void OnGUI()
