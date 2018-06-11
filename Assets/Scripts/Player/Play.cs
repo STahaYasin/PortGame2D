@@ -10,13 +10,13 @@ public class Play : MonoBehaviour
     public bool QuitApplication = false;
     public bool RotateAtLeave = false;
 
-    public InputField input;
+    //public InputField input;
 
 
     void Start()
     {
         Screen.orientation = ScreenOrientation.Portrait;
-        input.text = PlayerPrefs.GetString("player_name");
+        //input.text = PlayerPrefs.GetString("player_name");
     }
 
     void Update()
@@ -25,10 +25,10 @@ public class Play : MonoBehaviour
     }
     void OnMouseUp()
     {
-        string name = PlayerPrefs.GetString("player_name", null);
-        string inputName = input.text;
+        //string name = PlayerPrefs.GetString("player_name", null);
+        //string inputName = input.text;
 
-        if(name == null)
+        /*if(name == null)
         {
             if (inputName == null || inputName == "")
             {
@@ -49,7 +49,7 @@ public class Play : MonoBehaviour
             {
                 PlayerPrefs.SetString("player_name", inputName);
             }
-        }
+        }*/
 
         if(RotateAtLeave) Screen.orientation = ScreenOrientation.LandscapeLeft;
 
