@@ -3,7 +3,20 @@ guid: da783886b6225ba4997f7b6815585f68
 timeCreated: 1528734855
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: lvl1-boat_0
+    21300002: lvl1-boat_1
+    21300004: lvl1-boat_2
+    21300006: lvl1-boat_3
+    21300008: lvl1-boat_4
+    21300010: lvl1-boat_5
+    21300012: lvl1-boat_6
+    21300014: lvl1-boat_7
+    21300016: lvl1-boat_8
+    21300018: lvl1-boat_9
+    21300020: lvl1-boat_10
+    21300022: lvl1-boat_11
+    21300024: lvl1-boat_12
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -31,7 +44,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -99,7 +112,189 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lvl1-boat_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 315
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_1
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 319
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 315
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_3
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 320
+        width: 64
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_4
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 320
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 570
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 570
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_7
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 315
+        width: 64
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 320
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 320
+        width: 64
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 570
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 570
+        width: 67
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lvl1-boat_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 570
+        width: 64
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
