@@ -69,16 +69,18 @@ public class JoinTeam : MonoBehaviour {
         if (res.success)
         {
             text.text = res.message;
-            storeAndGo(res.data);
+            storeAndGo(res.data, res.data2);
         }
         else
         {
             text.text = res.message;
         }
     }
-    void storeAndGo(int teamid)
+    void storeAndGo(int teamid, int a)
     {
         PlayerPrefs.SetString("team_id", teamid.ToString());
+        PlayerPrefs.SetInt("character", a);
+        Debug.Log("Got character: " + a);
 
         go();
     }

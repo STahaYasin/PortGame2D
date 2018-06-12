@@ -19,6 +19,8 @@ public class NetworkManagerUserLocations : MonoBehaviour {
     private string userid;
     private string groupid;
 
+    public string level = "0.1";
+
     public TeamPlayer[] TeamMembers;
 
 	// Use this for initialization
@@ -53,7 +55,7 @@ public class NetworkManagerUserLocations : MonoBehaviour {
         form.AddField("groupid", groupid);
         form.AddField("x", Player.transform.position.x.ToString());
         form.AddField("y", Player.transform.position.y.ToString());
-        form.AddField("level", "0.1");
+        form.AddField("level", level);
 
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {

@@ -9,6 +9,8 @@ public class Player : Character {
 
     public float MoveSpeed = 0.2f;
 
+    public int character = 0;
+
     public SpriteHolder spriteHolder;
     public SpriteRenderer spriteRenderer;
 
@@ -39,6 +41,8 @@ public class Player : Character {
     }
     
 	void Start () {
+        character = PlayerPrefs.GetInt("character", 0);
+        spriteHolder.SetCharacter(character);
         //string a = ApplicationHttp.Post();
         if (MoveToSavedLocation)
         {

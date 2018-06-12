@@ -9,13 +9,14 @@ public class SpriteHolder : MonoBehaviour
     private int currentAnimState = 0;
     private float lastUpdateTime = 0;
     private float updateCooler = 0.25f;
-    
 
-    public Sprite[] Sprites_NotMoving;
-    public Sprite[] Sprites_left;
-    public Sprite[] Sprites_right;
-    public Sprite[] Sprites_top;
-    public Sprite[] Sprites_down;
+    private int character = 0;
+
+    public SpriteOneChar SpritesCustom;
+    public SpriteOneChar SpritesCraneOpp;
+    public SpriteOneChar SpritesTechnitian;
+    public SpriteOneChar SpritesWareHouseOpp;
+    public SpriteOneChar SpritesDocter;
 
     void Start()
     {
@@ -45,16 +46,33 @@ public class SpriteHolder : MonoBehaviour
     }
     private Sprite[] getSpriteArray()
     {
+        SpriteOneChar s;
+
+        switch (character)
+        {
+            case 1: s = SpritesCustom; break;
+            case 2: s = SpritesCraneOpp; break;
+            case 3: s = SpritesTechnitian; break;
+            case 4: s = SpritesWareHouseOpp; break;
+            default: s = SpritesDocter; break;
+        }
+
+
+
         switch (currentSpriteState)
         {
-            case 5: return Sprites_NotMoving;
-            case 4: return Sprites_left;
-            case 6: return Sprites_right;
-            case 8: return Sprites_top;
-            case 2: return Sprites_down;
+            case 5: return s.SpritesNotMoving;
+            case 4: return s.SpritesLeft;
+            case 6: return s.SpritesRight;
+            case 8: return s.SpritesUp;
+            case 2: return s.SpritesDown;
 
             default: return null;
         }
+    }
+    public void SetCharacter(int i)
+    {
+        character = i;
     }
     public string GetDirectionName()
     {
