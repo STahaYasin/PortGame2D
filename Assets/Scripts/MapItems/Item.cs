@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider))]
 public class Item : MonoBehaviour {
 
     public string name = "";
+
+    public GameObject showTarget;
+    public Image sp;
+    public Sprite SpriteToShow;
 
     public int CollectionItemNumber;
     //public Sprite MiniTexture;
@@ -44,6 +49,8 @@ public class Item : MonoBehaviour {
         Player player = other.gameObject.GetComponent<Player>();
         player.AddCollectingItem(this);
 
+        showTarget.SetActive(true);
+        sp.sprite = SpriteToShow;
         DestroyObject(this.gameObject);
     }
 }

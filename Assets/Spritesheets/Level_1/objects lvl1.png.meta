@@ -5,6 +5,8 @@ licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: objects lvl1_0
+    21300002: objects lvl1_1
+    21300004: objects lvl1_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -109,6 +111,34 @@ TextureImporter:
         y: 19
         width: 91
         height: 608
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: objects lvl1_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 481
+        width: 64
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: objects lvl1_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 319
+        width: 172
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

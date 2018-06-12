@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ItemHolder: MonoBehaviour {
 
     public GameObject panel;
+    public GameObject image;
 
     private bool userCollectionsOpened = false;
 
@@ -49,6 +50,7 @@ public class ItemHolder: MonoBehaviour {
     public void CloseCollectionsBox()
     {
         userCollectionsOpened = false;
+        //image.SetActive(false);
     }
     public void AddItem(Item item)
     {

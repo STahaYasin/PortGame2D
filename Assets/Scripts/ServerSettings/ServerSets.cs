@@ -42,6 +42,7 @@ public class ServerSets : MonoBehaviour {
     }
     public void TestConnectivity()
     {
+        remote = Togle.isOn;
         StartCoroutine(Upload());
     }
 	

@@ -131,10 +131,10 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-c57624728431e0ade03c19b0873b13af Assembly-CSharp.dll:.ItemHolder
+7ec31de44ccd2f0ed11dea190e919a8a Assembly-CSharp.dll:.ItemHolder
 470a627f9828de9dc856b2c93c76809b Assembly-CSharp.dll:.SpriteHolder
 cda5b3b56f27340374524624083d3955 Assembly-CSharp.dll:.PlayerMovement
-95fa47425fe42bd82f87ca2e363888dc Assembly-CSharp.dll:.Item
+4333a00d005b0cea07cd7707d9bc4096 Assembly-CSharp.dll:.Item
 a5bbced085ec716c1222bc9746385817 Assembly-CSharp.dll:.PipeGameManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -180,3 +180,4 @@ b0bca4a44bfdfb002e3cd4e66293fb32 Assembly-CSharp.dll:.Player
 5963a52ec027be070f5ab123cce34a4f Assembly-CSharp.dll:.NetworkManagerUserLocations
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StaticMembers
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ConnectToGroup
+28d8e94b3f016dfab7c0c44dc7e5cf44 Assembly-CSharp.dll:.CollectebleItemHandler
