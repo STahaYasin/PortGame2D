@@ -6,7 +6,7 @@ public class StaticMembers : MonoBehaviour {
 
     public static string ServerRemoteName = "server_remote";
     public static string ServerIpAddressName = "server_address";
-    public static string Host = "http://localhost";
+    public static string Host = "http://rumicentre.be/port/";
 
 	// Use this for initialization
 	void Start () {
@@ -35,6 +35,6 @@ public class StaticMembers : MonoBehaviour {
     }
     public static string GetRootUrlWithSlash()
     {
-        return GetUrlWithSlash() + "port/port/app/";
+        return GetUrlWithSlash() + "app/";
     }
 }
