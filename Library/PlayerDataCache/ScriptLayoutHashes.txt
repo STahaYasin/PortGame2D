@@ -133,6 +133,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 7ec31de44ccd2f0ed11dea190e919a8a Assembly-CSharp.dll:.ItemHolder
 470a627f9828de9dc856b2c93c76809b Assembly-CSharp.dll:.SpriteHolder
+1186c1b6c800c42195db2d7f5d93de41 Assembly-CSharp.dll:.CollectebleItemHandler
 cda5b3b56f27340374524624083d3955 Assembly-CSharp.dll:.PlayerMovement
 4333a00d005b0cea07cd7707d9bc4096 Assembly-CSharp.dll:.Item
 a5bbced085ec716c1222bc9746385817 Assembly-CSharp.dll:.PipeGameManager
@@ -180,4 +181,4 @@ b0bca4a44bfdfb002e3cd4e66293fb32 Assembly-CSharp.dll:.Player
 5963a52ec027be070f5ab123cce34a4f Assembly-CSharp.dll:.NetworkManagerUserLocations
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StaticMembers
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ConnectToGroup
-28d8e94b3f016dfab7c0c44dc7e5cf44 Assembly-CSharp.dll:.CollectebleItemHandler
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CloseBigImage

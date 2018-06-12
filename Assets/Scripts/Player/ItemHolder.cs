@@ -34,7 +34,7 @@ public class ItemHolder: MonoBehaviour {
             {
                 if (collected[i] == false) continue;
 
-                ui_collection_items[i].sprite = ui_textures[i];
+                //ui_collection_items[i].sprite = ui_textures[i];
                 Debug.Log("fvjfbj");
             }
         }
@@ -57,6 +57,8 @@ public class ItemHolder: MonoBehaviour {
         if (item == null) return;
 
         collected[item.CollectionItemNumber - 1] = true;
+        ui_collection_items[item.CollectionItemNumber - 1].sprite = ui_textures[item.CollectionItemNumber - 1];
+        ui_collection_items[item.CollectionItemNumber - 1].gameObject.GetComponent<CollectebleItemHandler>().Enable();
         //collectedItems[item.CollectionItemNumber - 1] = item;
     }
 }
