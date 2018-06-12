@@ -17,6 +17,10 @@ public class TeamPlayer : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void SetSprite(Sprite s)
+    {
+        sp.sprite = s;
+    }
     public void UpdatePos(UserPos u)
     {
         userid = u.userid;

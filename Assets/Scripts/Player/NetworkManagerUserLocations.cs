@@ -8,6 +8,8 @@ public class NetworkManagerUserLocations : MonoBehaviour {
 
     public GameObject Player;
 
+    public SpriteHolderTeam sprites;
+
     public GameObject PauseScreen;
     public Text pauseText;
 
@@ -82,18 +84,23 @@ public class NetworkManagerUserLocations : MonoBehaviour {
         if(res.data.Length > 0)
         {
             TeamMembers[0].UpdatePos(res.data[0]);
+            TeamMembers[0].SetSprite(sprites.GetSprite(res.data[0].character, 0));
+            
         }
         if (res.data.Length > 1)
         {
             TeamMembers[1].UpdatePos(res.data[1]);
+            TeamMembers[1].SetSprite(sprites.GetSprite(res.data[1].character, 0));
         }
         if (res.data.Length > 2)
         {
             TeamMembers[2].UpdatePos(res.data[2]);
+            TeamMembers[3].SetSprite(sprites.GetSprite(res.data[2].character, 0));
         }
         if (res.data.Length > 3)
         {
             TeamMembers[3].UpdatePos(res.data[3]);
+            TeamMembers[3].SetSprite(sprites.GetSprite(res.data[3].character, 0));
         }
     }
     IEnumerator JustWait()

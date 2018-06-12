@@ -9,4 +9,5 @@ public class UserPos {
     public string x;
     public string y;
     public string level;
+    public int character;
 }
