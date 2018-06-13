@@ -9,6 +9,7 @@ public class Item : MonoBehaviour {
     public string name = "";
 
     public GameObject showTarget;
+    public Player player;
     public Image sp;
     public Sprite SpriteToShow;
 
@@ -32,7 +33,12 @@ public class Item : MonoBehaviour {
     }
 
 	void Start () {
-		
+        int i = PlayerPrefs.GetInt("col-" + CollectionItemNumber.ToString(), 0);
+
+        if(i == 1)
+        {
+            Do();
+        }
 	}
 	
 	void Update () {
@@ -46,11 +52,15 @@ public class Item : MonoBehaviour {
     {
         if (other == null) return;
 
-        Player player = other.gameObject.GetComponent<Player>();
-        player.AddCollectingItem(this);
-
+        PlayerPrefs.SetInt("col-" + CollectionItemNumber.ToString(), 1);
         showTarget.SetActive(true);
         sp.sprite = SpriteToShow;
+        Do();
+    }
+    void Do()
+    {
+        //Player player = other.gameObject.GetComponent<Player>();
+        player.AddCollectingItem(this);
         DestroyObject(this.gameObject);
     }
 }

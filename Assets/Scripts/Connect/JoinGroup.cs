@@ -73,9 +73,10 @@ public class JoinGroup : MonoBehaviour {
     }
     public void DeleteKeys()
     {
-        PlayerPrefs.DeleteKey("group_id");
-        PlayerPrefs.DeleteKey("user_id");
-        PlayerPrefs.DeleteKey("team_id"); 
+        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteKey("group_id");
+        //PlayerPrefs.DeleteKey("user_id");
+        //PlayerPrefs.DeleteKey("team_id"); 
 
         storedgroup.active = false;
         storedgrouptext.text = null;
@@ -91,8 +92,6 @@ public class JoinGroup : MonoBehaviour {
             GoToTeams();
             return;
         }
-
-        DeleteKeys();
         //Check if filled in
 
         username = i_username.text;
@@ -137,7 +136,7 @@ public class JoinGroup : MonoBehaviour {
         if (res.success)
         {
             text.text = res.data.ToString();
-
+            DeleteKeys();
             storeAndGoToTeams(res);
         }
         else

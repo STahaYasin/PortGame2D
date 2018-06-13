@@ -3,7 +3,8 @@ guid: 312b5f388feb24f4f8b603035614a011
 timeCreated: 1527707742
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: boat game_0
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -99,7 +100,21 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: boat game_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 108
+        width: 310
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

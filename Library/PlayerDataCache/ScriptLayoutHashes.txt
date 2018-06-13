@@ -135,7 +135,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 470a627f9828de9dc856b2c93c76809b Assembly-CSharp.dll:.SpriteHolder
 1186c1b6c800c42195db2d7f5d93de41 Assembly-CSharp.dll:.CollectebleItemHandler
 cda5b3b56f27340374524624083d3955 Assembly-CSharp.dll:.PlayerMovement
-4333a00d005b0cea07cd7707d9bc4096 Assembly-CSharp.dll:.Item
+aa1cee9717fd0e63ca6e7e0d5d37192f Assembly-CSharp.dll:.Item
 a5bbced085ec716c1222bc9746385817 Assembly-CSharp.dll:.PipeGameManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -177,6 +177,7 @@ b60ad94c8cda70a98a84a09e9e6381aa Assembly-CSharp.dll:.PLayButton
 b946c095af342fed183d7ab4d6c4d8cd Assembly-CSharp.dll:.MoveThePlayer
 7acaea6bbe950071e937022be9292e76 Assembly-CSharp.dll:.LevelAction
 6784d71e5bcb2bf25e663d60bbc1c4ef Assembly-CSharp.dll:.JoinGroup
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoatController
 2be07298c39dfda1843baf145a866eac Assembly-CSharp.dll:.JoinTeam
 b0bca4a44bfdfb002e3cd4e66293fb32 Assembly-CSharp.dll:.Player
 5963a52ec027be070f5ab123cce34a4f Assembly-CSharp.dll:.NetworkManagerUserLocations
